@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 var mongoose = require("mongoose");
 var passport = require("passport")
 
-mongoose.connect("mongodb://localhost/news");
+var connectionString = process.env.HEROKU_MONGODB_URI
+mongoose.connect(connectionString || 'mongodb://localhost/news');
 
 // Require models
 require("./config/passport")
