@@ -9,7 +9,7 @@ script:
 deploy:
   provider: heroku
   app: 
-    master: pdes-flappernews-en-clase
+    master: pdes-flapper-en-clase
     cdeployment: pdes-flappernews-en-clase
   api_key:
     secure: $HEROKU_API_KEY
