@@ -10,6 +10,6 @@ deploy:
   provider: heroku
   app: 
     master: pdes-flapper-en-clase
-    cdeployment: pdes-flappernews-en-clase
+    cdeployment: pdes-flapper-en-clase
   api_key:
     secure: $HEROKU_API_KEY
